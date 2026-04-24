@@ -34,7 +34,7 @@ public class FuncionarioService {
 
     public void excluir(Long id){
         if (!repository.existsById(id)){
-            throw new IllegalArgumentException("Funcionário não encopntrado");
+            throw new IllegalArgumentException("Funcionário não encontrado");
         }
         repository.deleteById(id);
 

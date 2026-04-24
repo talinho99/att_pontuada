@@ -8,5 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface EntregadorRepository extends JpaRepository<EntregadorModel, Long> {
+    Optional<EntregadorModel> findByEmail (String email);
 
 }
